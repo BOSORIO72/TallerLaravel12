@@ -9,7 +9,7 @@
         body { font-family: Arial, sans-serif; background: #f4f6f8; color: #333; }
 
         nav {
-            background: #1a73e8;
+            background: #e81a1a;
             padding: 0 2rem;
             display: flex;
             align-items: center;
@@ -36,31 +36,31 @@
             margin-bottom: 1rem;
         }
 
-        h1 { margin-bottom: 1rem; color: #1a73e8; }
+        h1 { margin-bottom: 1rem; color: #e81a1a; }
         h2 { margin-bottom: 0.5rem; }
 
         table { width: 100%; border-collapse: collapse; }
         th, td { text-align: left; padding: 0.6rem 1rem; border-bottom: 1px solid #e0e0e0; }
-        th { background: #f0f4ff; color: #1a73e8; }
+        th { background: #f0f4ff; color: #e81a1a; }
         tr:hover td { background: #fafafa; }
 
         .btn {
             display: inline-block;
             padding: 0.4rem 1rem;
-            background: #1a73e8;
+            background: #e81a1a;
             color: #fff;
             border-radius: 4px;
             text-decoration: none;
             font-size: 0.9rem;
             margin-top: 0.5rem;
         }
-        .btn:hover { background: #1558b0; }
+        .btn:hover { background: #e81a1a; }
         .btn-outline {
             background: transparent;
-            border: 1px solid #1a73e8;
-            color: #1a73e8;
+            border: 1px solid #e81a1a;
+            color: #e81a1a;
         }
-        .btn-outline:hover { background: #1a73e8; color: #fff; }
+        .btn-outline:hover { background: #e81a1a; color: #fff; }
 
         .badge {
             display: inline-block;
@@ -68,7 +68,7 @@
             border-radius: 12px;
             font-size: 0.8rem;
             background: #e8f0fe;
-            color: #1a73e8;
+            color: #e81a1a;
         }
 
         .alert { padding: 1rem; border-radius: 6px; background: #fff3cd; border: 1px solid #ffc107; }

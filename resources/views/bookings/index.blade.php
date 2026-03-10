@@ -2,30 +2,32 @@
 
 @section('content')
 <div class="card">
-    <h1>Lista de Canchas</h1>
-    <a href="{{ route('courts.create') }}" class="btn" style="margin-bottom:1rem; display:inline-block;">+ Nueva cancha</a>
+    <h1>Lista de Reservas</h1>
+    <a href="{{ route('bookings.create') }}" class="btn" style="margin-bottom:1rem; display:inline-block;">+ Nueva reserva</a>
 
     <table>
         <thead>
             <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Tipo</th>
-                <th>Precio/Hora</th>
+                <th>ID</th>
+                <th>Cancha</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Cliente</th>
+                <th>Total</th>
                 <th>Acción</th>
             </tr>
         </thead>
         <tbody>
-            {{-- Actividad 4: uso obligatorio de @foreach --}}
-            @foreach($canchas as $cancha)
+            @foreach($reservas as $reserva)
                 <tr>
-                    <td>{{ $cancha['id'] }}</td>
-                    <td>{{ $cancha['nombre'] }}</td>
-                    <td><span class="badge">{{ $cancha['tipo'] }}</span></td>
-                    <td>${{ number_format($cancha['precioHora'], 0, ',', '.') }}</td>
+                    <td>#{{ $reserva['id'] }}</td>
+                    <td>{{ $reserva['cancha'] }}</td>
+                    <td>{{ $reserva['fecha'] }}</td>
+                    <td>{{ $reserva['hora'] }}</td>
+                    <td>{{ $reserva['cliente'] }}</td>
+                    <td>${{ number_format($reserva['total'], 0, ',', '.') }}</td>
                     <td>
-                        {{-- Actividad 4: enlace al detalle con route() --}}
-                        <a href="{{ route('courts.show', ['id' => $cancha['id']]) }}" class="btn btn-outline">Ver detalle</a>
+                        <a href="{{ route('bookings.show', ['id' => $reserva['id']]) }}" class="btn btn-outline">Ver detalle</a>
                     </td>
                 </tr>
             @endforeach
